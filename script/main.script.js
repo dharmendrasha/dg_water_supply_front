@@ -1,5 +1,20 @@
 AOS.init();
 
+
+// drop down
+
+function show(value) {
+    document.querySelector(".text-box").value = value;
+  }
+  
+  let dropdown = document.querySelector(".dropdown")
+  dropdown.onclick = function() {
+      dropdown.classList.toggle("active")
+  }
+  
+
+
+// mobile nav
 const clickHamButton = document.querySelector('.hamburger-btn');
 const showMenu = document.querySelector('.drawer');
 const shadow = document.querySelector('.bg-shadow')
@@ -18,3 +33,4 @@ shadow.addEventListener('click', () => {
     showMenu.classList.remove('show');
     shadow.classList.toggle('remove-shadow');
 })
+
