@@ -82,6 +82,14 @@
                 </ul>
             </div>
         </header>
+        <!-- bread crumb section -->
+        <section class="breadcrumb">
+            <div class="wrapper display-inline">
+                <a href="/home.html">Home</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <a href="/services.html">Services</a>
+            </div>
+        </section>
         <!-- heading section  -->
         <section class="heading">
             <div class="wrapper display-inline justify-center">
@@ -184,7 +192,7 @@
                         <div class="inputfield">
                             <label>Service Type: <span>*</span></label>
                             <div class="custom_select">
-                                <select>
+                                <select onchange="showDiv(value)">
                                     <option value="">Select</option>
                                     <option class="daily-click" value="daily">Daily Basis</option>
                                     <option class="frequently-click" value="frequently">Frequently</option>

@@ -23,13 +23,16 @@ shadow.addEventListener("click", () => {
 
 // show and hide daily & frequently
 
-const dailyClick = document.querySelector('.daily-click')
-const frequentlyClick = document.querySelector('.frequently-click')
 const dailyBasis = document.querySelector('.show-daily');
 const frequentlyBasis = document.querySelector('.show-frequently');
 
-// hidebasis
-dailyClick.addEventListener('click', () => {
-  console.log(dailyBasi);
-  dailyBasis.classList.add('hidebasis')
-})
+function showDiv(element)
+{
+  if(element == "daily"){
+    dailyBasis.classList.add('hidebasis');
+    frequentlyBasis.classList.remove('hidebasis');
+  }else if(element == "frequently"){
+    frequentlyBasis.classList.add('hidebasis');
+    dailyBasis.classList.remove('hidebasis');
+  }
+}
