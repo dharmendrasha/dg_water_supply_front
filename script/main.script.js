@@ -36,3 +36,19 @@ function showDiv(element)
     dailyBasis.classList.remove('hidebasis');
   }
 }
+
+// product-details cart counter
+const price = document.querySelector("#cart-price");
+var initialPrice = Number(price.innerText);
+
+function incrementCounter() {
+  initialPrice += 1;
+  price.innerText = initialPrice;
+}
+
+function decrementCounter() {
+  if (initialPrice > 0) {
+    initialPrice -= 1;
+    price.innerText = initialPrice;
+  }
+}
