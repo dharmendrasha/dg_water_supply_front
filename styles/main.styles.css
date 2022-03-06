@@ -970,6 +970,149 @@ section.sign .form-container .form .display-inline input:last-child {
     }
 }
 
+
+/*  MyAccount */
+
+section.account-setting {
+    display: flex;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+
+section.account-setting input{
+    background: #fff;
+    border: 1px solid #ececec;
+    height: 64px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+section.account-setting>div span {
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+section.account-setting>div label {
+    font-family: 'Inter', sans-serif;
+}
+
+section.account-setting .options {
+    width: 100%;
+    height: 400px;
+    flex: 1;
+}
+
+section.account-setting .options>div {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--main-border);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    box-shadow: 5px 5px 15px var(--main-border);
+    cursor: pointer;
+}
+
+section.account-setting .options>div:hover {
+    background-color: var(--main-green);
+    color: #fff;
+}
+
+section.account-setting .setting-container {
+    width: 100%;
+    flex: 3;
+    border: 1px solid var(--main-border);
+    border-radius: 10px;
+    padding: 0 4rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+section.account-setting .setting-container .title {
+    margin: 2rem 0;
+}
+
+section.account-setting .setting-container .form-group .input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.account-setting .setting-container .form-group .input-field {
+    width: 45%;
+    margin: 0.5rem 0;
+}
+
+section.account-setting .setting-container .form-group .input-field input[type="text"] {
+    margin-top: 0.4rem;
+}
+
+section.account-setting .setting-container button {
+    margin: 2em 0;
+    float: right;
+}
+
+/* 1.1 order container */
+
+section.account-setting .order-container {
+    width: 100%;
+    flex: 3;
+    border: 1px solid var(--main-border);
+    border-radius: 10px;
+    padding: 0 4rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+section.account-setting .title {
+    margin: 2rem 0;
+}
+
+/* 1.2 address-container */
+
+section.account-setting .address-container {
+    width: 100%;
+    flex: 3;
+    border: 1px solid var(--main-border);
+    border-radius: 10px;
+    padding: 0 4rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+section.account-setting .address-container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+section.account-setting .address-container .button-primary {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+}
+
+/* css for account setting active target tab */
+
+[data-tab-scontent] {
+    display: none !important;
+}
+
+.actives[data-tab-scontent] {
+    display: block !important;
+}
+
+
+
 @media screen and (max-width: 860px) {
     section.product .product-container {
         grid-template-columns: repeat(3, 1fr);
@@ -1006,6 +1149,7 @@ section.sign .form-container .form .display-inline input:last-child {
         margin-bottom: 5rem;
     }
 }
+
 
 @media screen and (max-width: 700px) {
     section.product .product-container {

@@ -1,5 +1,23 @@
 AOS.init();
 
+// my account setting
+
+const selectSettingTabs = document.querySelectorAll("[data-tab-target]");
+const tabSettingContents = document.querySelectorAll("[data-tab-scontent]");
+
+selectSettingTabs.forEach((selectSettingTab) => {
+  selectSettingTab.addEventListener("click", () => {
+    const tabTarget = document.querySelector(
+      selectSettingTab.dataset.tabTarget
+    );
+    tabSettingContents.forEach((content) => {
+      content.classList.remove("actives");
+    });
+    tabTarget.classList.add("actives");
+  });
+});
+
+
 // mobile nav
 const clickHamButton = document.querySelector(".hamburger-btn");
 const showMenu = document.querySelector(".drawer");
@@ -52,3 +70,5 @@ function decrementCounter() {
     price.innerText = initialPrice;
   }
 }
+
+

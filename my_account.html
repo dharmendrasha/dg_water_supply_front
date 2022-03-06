@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Water Supply</title>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- animate aos -->
-    <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" href="./aos/aos.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="./styles/main.styles.css">
+    <link rel="stylesheet" href="./styles/main.styles.css" />
 </head>
 
 <body>
@@ -25,11 +25,11 @@
             <!-- navigation bar -->
             <nav class="display-inline space-between">
                 <div class="nav-logo display-inline">
-                    <img src="./assets/logo.png" alt="logo">
+                    <img src="./assets/logo.png" alt="logo" />
                     <h2>Water Supply</h2>
                 </div>
                 <ul class="display-inline">
-                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a class="active" href="/home.html">Home</a></li>
                     <li><a href="./products.html">Products</a></li>
                     <li><a href="./services.html">Services</a></li>
                     <li><a href="./contact_us.html">Contact us</a></li>
@@ -37,7 +37,7 @@
                     <li>
                         <a href="./cart.html" class="my-cart display-inline">
                             <div class="cart-img">
-                                <img src="./assets/icons/cart-outline.svg">
+                                <img src="./assets/icons/cart-outline.svg" />
                                 <div class="badge display-inline justify-center">4</div>
                             </div>
                             <div>Cart</div>
@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./index.html">
+                            <a href="./home.html">
                                 <ion-icon class="icon-nav active-nav" name="home-outline"></ion-icon>
                             </a>
                         </li>
@@ -69,11 +69,11 @@
             <div class="bg-shadow remove-shadow"></div>
             <div class="drawer">
                 <div class="nav-logo display-inline">
-                    <img src="./assets/logo.png" alt="logo">
+                    <img src="./assets/logo.png" alt="logo" />
                     <h2>Water Supply</h2>
                 </div>
                 <ul class="display-inline">
-                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a class="active" href="/home.html">Home</a></li>
                     <li><a href="./products.html">Products</a></li>
                     <li><a href="./about.html">About us</a></li>
                     <li><a href="./contact_us.html">Contact us</a></li>
@@ -81,7 +81,198 @@
                 </ul>
             </div>
         </header>
-        
+        <!-- bread crumb section -->
+        <section class="breadcrumb">
+            <div class="wrapper display-inline">
+                <a href="/home.html">Home</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <a href="/my_account.html">My Account</a>
+            </div>
+        </section>
+        <!-- account settings -->
+        <section class="account-setting">
+            <div class="options account-nav-bar">
+                <div data-tab-target="#account-setting">
+                    <img src="../assets/icons/user.svg" alt="" />
+                    <span>Account Settings</span>
+                </div>
+                <div data-tab-target="#account-orders">
+                    <img src="../assets/icons/orders.svg" alt="" />
+                    <span>My Orders</span>
+                </div>
+                <div data-tab-target="#account-track">
+                    <img src="../assets/icons/track-order.svg" alt="" />
+                    <span>Track Order</span>
+                </div>
+                <div data-tab-target="#account-address">
+                    <img src="../assets/icons/address.svg" alt="" />
+                    <span>Address</span>
+                </div>
+                <div data-tab-target="#account-password">
+                    <img src="../assets/icons/chenge-pass.svg" alt="" />
+                    <span>Chenge Password</span>
+                </div>
+                <div>
+                    <img src="../assets/icons/log-out.svg" alt="" />
+                    <span>Logout</span>
+                </div>
+            </div>
+            <div class="setting-container actives" id="account-setting" data-tab-scontent>
+                <div class="personal">
+                    <h2 class="title">Personal Information</h2>
+                    <form class="form-group">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">First Name *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Last Name *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <div>
+                                <label for="fname">Phone/Mobile *</label>
+                            </div>
+                            <div>
+                                <input type="text" id="fname" name="firstname" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="account">
+                    <h2 class="title">Account Information</h2>
+                    <form class="form-group">
+                        <div class="input-field">
+                            <div>
+                                <label for="fname">Email *</label>
+                            </div>
+                            <div>
+                                <input type="text" id="fname" name="firstname" />
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Passwrd *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Confirm Password *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button-primary">Save Changes</button>
+                </div>
+            </div>
+            <div class="order-container" id="account-orders" data-tab-scontent>
+                <div class="nutration-details">
+                    <h2 class="title">My Order Details</h2>
+
+                </div>
+            </div>
+            <div class="setting-container" id="account-track" data-tab-scontent>
+                <div class="account">
+                    <h2 class="title">Orders tracking</h2>
+                    <p>
+                        To track your order please enter your OrderID in the box below and
+                        press "Track" button. This was given to you on your receipt and in
+                        the confirmation email you should have received.
+                    </p>
+                    <form class="form-group" style="margin-top: 1rem">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Order ID *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Billing Email *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button-primary">Track</button>
+                </div>
+            </div>
+            <div class="address-container" id="account-address" data-tab-scontent>
+                <h2 class="title">Address</h2>
+                <div class="wrapper">
+                    <address class="billing">
+                        21000 Brookpark Rd, Cleveland, OH 44135, United States
+                        <br />
+                        State: USA
+                        <br />
+                        City: Cleveland
+                        <br />
+                        Phone: +22 256 456 365 2
+                    </address>
+                    <button class="button-primary">Edit</button>
+                </div>
+                <div class="wrapper">
+                    <address class="billing">
+                        21000 Brookpark Rd, Cleveland, OH 44135, United States
+                        <br />
+                        State: USA
+                        <br />
+                        City: Cleveland
+                        <br />
+                        Phone: +22 256 456 365 2
+                    </address>
+                    <button class="button-primary">Edit</button>
+                </div>
+            </div>
+            <div class="setting-container" id="account-password" data-tab-scontent>
+                <div class="account">
+                    <h2 class="title">Chenge Password</h2>
+                    <form class="form-group">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">Old Passwrd *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div>
+                                    <label for="sub">New Password *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="sub" name="firstname" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button-primary">Save Changes</button>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- font-icons -->
