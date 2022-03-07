@@ -1,5 +1,7 @@
 AOS.init();
 
+
+
 // my account setting
 
 const selectSettingTabs = document.querySelectorAll("[data-tab-target]");
@@ -55,20 +57,33 @@ function showDiv(element)
   }
 }
 
+const snowMenuMob = document.querySelector(".account-nav-bar");
+const vabiableMob = document.querySelector(".mob-click-event");
+const mobShadow = document.querySelector(".mob-shadow");
+
+vabiableMob.addEventListener("click",() => {
+  snowMenuMob.classList.add("show-mob-sidebar");
+  mobShadow.style.display = "block";
+});
+mobShadow.addEventListener("click",() => {
+  snowMenuMob.classList.remove("show-mob-sidebar");
+  mobShadow.style.display = "none";
+});
+
 // product-details cart counter
-const price = document.querySelector("#cart-price");
-var initialPrice = Number(price.innerText);
+// const price = document.querySelector("#cart-price");
+// var initialPrice = Number(price.innerText);
 
-function incrementCounter() {
-  initialPrice += 1;
-  price.innerText = initialPrice;
-}
+// function incrementCounter() {
+//   initialPrice += 1;
+//   price.innerText = initialPrice;
+// }
 
-function decrementCounter() {
-  if (initialPrice > 0) {
-    initialPrice -= 1;
-    price.innerText = initialPrice;
-  }
-}
+// function decrementCounter() {
+//   if (initialPrice > 0) {
+//     initialPrice -= 1;
+//     price.innerText = initialPrice;
+//   }
+// }
 
 

@@ -979,8 +979,7 @@ section.account-setting {
     margin-bottom: 4rem;
 }
 
-
-section.account-setting input{
+section.account-setting input {
     background: #fff;
     border: 1px solid #ececec;
     height: 64px;
@@ -1111,6 +1110,109 @@ section.account-setting .address-container .button-primary {
     display: block !important;
 }
 
+/* account settings nav */
+
+section.settings .mob-click-event {
+    display: none;
+    width: 35%;
+}
+
+section.settings .mob-click-event .display-inline {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 1px solid var(--main-border);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+section.settings .mob-click-event .display-inline .icon-icon {
+    font-size: 1.2rem;
+}
+
+section.account-setting .order-container .title-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.account-setting .order-container .title-type .title {
+    font-weight: bold;
+}
+
+section.account-setting .order-container .title-type .type {
+    font-weight: 400;
+    background-color: var(--main-green);
+    padding: 8px;
+    color: #ffffff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+section.account-setting .order-container {
+    overflow-x: scroll;
+}
+
+#order-table {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#order-table th,
+#order-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+#order-table tr {
+    margin-top: 0.5rem;
+}
+
+#order-table .button-primary {
+    background-color: red;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+section.account-setting .order-container .mainbtn {
+    margin: 2rem 0;
+    float: right;
+}
 
 
 @media screen and (max-width: 860px) {
@@ -1241,4 +1343,62 @@ section.account-setting .address-container .button-primary {
         font-size: 1rem;
     }
 
+    /* account settings */
+
+    section.account-setting .setting-container .form-group .input-group {
+        flex-direction: column;
+    }
+
+    section.account-setting .setting-container .form-group .input-field {
+        width: 100%;
+    }
+
+    section.account-setting .setting-container {
+        padding: 0;
+        border: none;
+    }
+
+    section.account-setting .account-nav-bar {
+        margin-top: 0rem;
+        padding-top: 6rem;
+        margin-bottom: 2rem;
+        position: fixed;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        z-index: 10;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.09),
+            0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0646969),
+            0px 22.3363px 17.869px rgba(0, 0, 0, 0.00536497),
+            0px 12.5216px 10.0172px rgba(0, 0, 0, 0.0045),
+            0px 6.6501px 5.32008px rgba(0, 0, 0, 0.00363503),
+            0px 2.76726px 2.21381px rgba(0, 0, 0, 0.00253031);
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    section.account-setting .account-nav-bar.show-mob-sidebar {
+        display: block;
+    }
+
+    section.settings .mob-click-event {
+        display: block;
+    }
+
+    .mob-shadow {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: none;
+    }
+
+    section.account-setting .address-container,
+    section.account-setting .order-container {
+        border: none;
+        padding: 0;
+    }
 }

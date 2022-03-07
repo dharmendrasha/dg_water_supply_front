@@ -25,7 +25,7 @@
             <!-- navigation bar -->
             <nav class="display-inline space-between">
                 <div class="nav-logo display-inline">
-                    <img src="./assets/logo.png" alt="logo" />
+                    <img src="./assets/logo.png" alt="logo">
                     <h2>Water Supply</h2>
                 </div>
                 <ul class="display-inline">
@@ -37,7 +37,7 @@
                     <li>
                         <a href="./cart.html" class="my-cart display-inline">
                             <div class="cart-img">
-                                <img src="./assets/icons/cart-outline.svg" />
+                                <img src="./assets/icons/cart-outline.svg">
                                 <div class="badge display-inline justify-center">4</div>
                             </div>
                             <div>Cart</div>
@@ -69,7 +69,7 @@
             <div class="bg-shadow remove-shadow"></div>
             <div class="drawer">
                 <div class="nav-logo display-inline">
-                    <img src="./assets/logo.png" alt="logo" />
+                    <img src="./assets/logo.png" alt="logo">
                     <h2>Water Supply</h2>
                 </div>
                 <ul class="display-inline">
@@ -81,6 +81,7 @@
                 </ul>
             </div>
         </header>
+        <div class="mob-shadow"></div>
         <!-- bread crumb section -->
         <section class="breadcrumb">
             <div class="wrapper display-inline">
@@ -90,30 +91,32 @@
             </div>
         </section>
         <!-- account settings -->
+        <section class="settings">
+            <div class="mob-click-event display-inline show-mob-bar">
+                <div class="display-inline">
+                    <ion-icon class="icon-icon" name="grid-outline"></ion-icon>
+                    <p>Options</p>
+                </div>
+            </div>
+        </section>
         <section class="account-setting">
             <div class="options account-nav-bar">
-                <div data-tab-target="#account-setting">
-                    <img src="../assets/icons/user.svg" alt="" />
+                <div data-tab-target="#account-setting" class="account-tab-hide">
                     <span>Account Settings</span>
                 </div>
-                <div data-tab-target="#account-orders">
-                    <img src="../assets/icons/orders.svg" alt="" />
+                <div data-tab-target="#account-orders" class="account-tab-hide">
                     <span>My Orders</span>
                 </div>
-                <div data-tab-target="#account-track">
-                    <img src="../assets/icons/track-order.svg" alt="" />
+                <div data-tab-target="#account-track" class="account-tab-hide">
                     <span>Track Order</span>
                 </div>
-                <div data-tab-target="#account-address">
-                    <img src="../assets/icons/address.svg" alt="" />
+                <div data-tab-target="#account-address" class="account-tab-hide">
                     <span>Address</span>
                 </div>
-                <div data-tab-target="#account-password">
-                    <img src="../assets/icons/chenge-pass.svg" alt="" />
+                <div data-tab-target="#account-password" class="account-tab-hide">
                     <span>Chenge Password</span>
                 </div>
                 <div>
-                    <img src="../assets/icons/log-out.svg" alt="" />
                     <span>Logout</span>
                 </div>
             </div>
@@ -185,7 +188,49 @@
             <div class="order-container" id="account-orders" data-tab-scontent>
                 <div class="nutration-details">
                     <h2 class="title">My Order Details</h2>
-
+                    <div class="title-type">
+                        <p class="title">Service Type</p>
+                        <p class="type">Weekly/Monthly</p>
+                    </div>
+                    <table id="customers">
+                        <tr>
+                            <th>Order</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Container</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>#25454</td>
+                            <td>12.2.21</td>
+                            <td>Active</td>
+                            <td>10 L</td>
+                            <td>120₹/L</td>
+                        </tr>
+                    </table>
+                    <table id="order-table">
+                        <tr>
+                            <th>Order Date</th>
+                            <th>Order Name</th>
+                            <th>Cancel Order</th>
+                        </tr>
+                        <tr>
+                            <td>01.08.2022</td>
+                            <td>10L Container</td>
+                            <td><button class="button-primary">Cancel</button></td>
+                        </tr>
+                        <tr>
+                            <td>01.08.2022</td>
+                            <td>10L Container</td>
+                            <td><button class="button-primary">Cancel</button></td>
+                        </tr>
+                        <tr>
+                            <td>01.08.2022</td>
+                            <td>10L Container</td>
+                            <td><button class="button-primary">Cancel</button></td>
+                        </tr>
+                    </table>
+                    <button class="button-primary mainbtn">Save Chenges</button>
                 </div>
             </div>
             <div class="setting-container" id="account-track" data-tab-scontent>
